@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dropbox | Sign up</title>
+  <link rel="shortcut icon" href="../media/images/dropbox2.png">
+  <meta charset="UTF-8">
+  <meta name="description" content="Página de Sign up da dropbox">
+  <meta name="keywords" content="Dropbox, Cloud, Sign up">
+  <meta name="author" content="João Rodrigues">
+  <style>
+    form {
+      max-width: 550px;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="../index.html">Home</a>
+  <a href="./compare.html">Compare Plans</a>
+  <a href="./sign_up.html">Sign up</a>
+  <a href="https://www.dropbox.com/login">Sign in</a>
+  <h1>Sign up</h1>
+
+  <form method="post" action='/submit'>
+    <!--Esta é a primeira parte do formulário-->
+    <fieldset>
+      <legend>Credentials</legend>
+      Email:
+      <input type="email" name="email" placeholder="email" required><br>
+      Password:
+      <input type="password" name="Password" placeholder="Password" minlength="6" maxlength="20" required><br>
+    </fieldset>
+    <!--Esta é a segunda parte do formulário-->
+    <fieldset>
+      <legend>Profile</legend>
+      First name:
+      <input type="text" name="Fist name" placeholder="First name" required>
+      Last name:
+      <input type="text" name="Last name" placeholder="Last name" required><br>
+      Fullname:
+      <input type="text" name="Fullname" placeholder="Fullname" disabled><br>
+      Date of birth:
+      <input type="date" name="Date of birth"><br>
+      Pick your avatar:
+      <input type="file" name="file" accept="image/*">
+    </fieldset>
+
+    <!--Esta é a terceira parte do formulário-->
+    <fieldset>
+      <legend>Company</legend>
+      Name: <input type="text" name="Name" placeholder="name" required>
+      Size:
+      <select name="Size" required>
+        <option value="" selected="selected"></option>
+        <optgroup label="Startup">
+          <option value="1-5 people">1-5 people</option>
+          <option value="5-10 people">5-10 people</option>
+          <option value="10-20 people">10-20 people</option>
+        </optgroup>
+        <optgroup label="Grownup">
+          <option value="20-50 people">20-50 people</option>
+          <option value="50-100 people">50-100 people</option>
+          <option value="100-500 people">100-500 people</option>
+          <option value=">500 people">>500 people</option>
+        </optgroup>
+      </select></br>
+
+      <p>Domain of operation:</p><br>
+      <input type="checkbox" id="dop" name="dop1" value="Technology">
+      Technology
+      <input type="checkbox" id="dop" name="dop2" value="Finance">
+      Finance
+      <input type="checkbox" id="dop" name="dop3" value="Insurance">
+      Insurance
+      <input type="checkbox" id="dop" name="dop4" value="Tourism">
+      Tourism
+      <input type="checkbox" id="dop" name="dop5" value="Food">
+      Food<br>
+      <input type="checkbox" id="dop" name="dop6" value="Other">
+      Other
+      <input type="text" name=other>
+
+      <!--Esta é a terceira parte do formulário-->
+      <fieldset>
+        <legend>Adress</legend>
+        Street:
+        <input type="text" id="Street" name="Street" placeholder="street">
+        Number:
+        <input type="text" id="Number" name="Number" placeholder="number"><br>
+        City:
+        <input type="text" id="City" name="City" placeholder="city" placeholder="city">
+        Postal code:
+        <input type="text" id="Postalcode" name="Postalcode" placeholder="xxxx-xxx" pattern="\d{4}-\d{3}"><br>
+        Country:
+        <select name="country">
+          <option value="" selected></option>
+          <option value="Portugal">Portugal</option>
+          <option value="Spain">Spain</option>
+          <option value="United States">United States</option>
+          <option value="Canada">Canada</option>
+          <option value="United kigndom">United Kingdom</option>
+          <option value="France">France</option>
+          <option value="Grece">Grece</option>
+          <option value="Finland">Finland</option>
+        </select>
+      </fieldset>
+    </fieldset>
+
+    <p>Are there any suggestions you would like to give us?</p>
+
+    <textarea name="suggestions" rows="7" cols="40" maxlength="250"
+      placeholder="Please be honest with us :)"></textarea><br>
+
+    Would you like to receive our newsletter?
+    <input type="radio" name="newsletter" value="true" checked> Yes
+    <input type="radio" name="newsletter" value="false"> No<br>
+    <input type="submit" value="Sign up!">
+    <input type="reset" value="Clear"><br>
+  </form>
+
+  <!--Isto é o rodapé-->
+  <hr>
+  <img src="../media/images/dropbox2.png" alt="dropbox2.png" width="64" height="64">
+  <p>
+    <i>Dropbox</i><br>
+    <i>333 Brannan St, San Francisco</i><br>
+    <i>CA 94107</i><br>
+    <i>USA</i><br>
+    <i><a href="mailto:support@dropbox.com">support@dropbox.com</a></i>
+  </p>
+</body>
+
+</html>
